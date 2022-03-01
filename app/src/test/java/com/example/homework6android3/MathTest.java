@@ -24,6 +24,7 @@ public class MathTest {
         assertEquals("1", math.divide("2", "2"));
     }
 
+
     @Test
 
     public void simpleMultiplyTest() {
@@ -48,7 +49,7 @@ public class MathTest {
 
     @Test
     public void isDividedByZero() {
-        assertEquals("Error,you can't divide by zero", math.dividedByZero("2", "0"));
+        assertEquals("Error,you can't divide by zero", math.divide("2", "0"));
     }
 
     @Test

@@ -24,9 +24,16 @@ public class Math {
     public String divide(String a, String b) {
         int num1 = Integer.parseInt(a.trim());
         int num2 = Integer.parseInt(b.trim());
-
+        if (num1 < 0 || num2 < 0)
         return String.valueOf(num1 / num2);
-    }
+        {
+            return "Num 1 cannot be divided by zero";
+        }
+
+        }
+
+
+
 
     public String multiply(String a, String b) {
         int num1 = Integer.parseInt(a.trim());
@@ -35,17 +42,6 @@ public class Math {
 
     }
 
-    public String dividedByZero(String a, String b) {
-        int num1 = Integer.parseInt(a.trim());
-        int num2 = Integer.parseInt(b.trim());
-        if (num1 < 0 || num2 < 0) {
-            return "Num 1 cannot be divided by zero";
-
-        }
-        return "Error,you can't divide by zero";
-
-
-    }
 
 
     public String areSymbolsIncluded(String a, String b) {
